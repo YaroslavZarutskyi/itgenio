@@ -1,0 +1,96 @@
+body{
+	background-color: #87CEEB
+}
+.gallery{
+	padding-top: 40px;
+}
+.picture{
+	width: 107vh;
+	height: 67vh;
+	overflow: hidden;
+	display: none;
+	margin-left: 290px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px grey;
+}
+img{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+#toggler1:checked ~ .picture1{
+	display: block;
+}
+#toggler2:checked ~ .picture2{
+	display: block;
+}
+#toggler3:checked ~ .picture3{
+	display: block;
+} 
+#toggler4:checked ~ .picture4{
+	display: block;
+} 
+input[type="radio"]{
+	display: none;
+}
+.labels{
+	width: 200px;
+	height: 150px;
+	padding-top: 10px;
+	margin-left: 370px;
+}
+label[for="toggler1"]{
+	width: 200px;
+	height: 150px;
+	position: absolute;
+	margin-left: -70px;
+	margin-bottom: 70px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px grey;
+}
+label[for="toggler2"]{
+	width: 200px;
+	height: 150px;
+	position: absolute;
+	margin-left: 140px;
+	margin-bottom: 70px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px grey;
+}
+label[for="toggler3"]{
+	width: 200px;
+	height: 150px;
+	position: absolute;
+	margin-left: 350px;
+	margin-bottom: 70px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px grey;
+}
+label[for="toggler4"]{
+	width: 200px;
+	height: 150px;
+	position: absolute;
+	margin-left: 560px;
+	margin-bottom: 70px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px grey;
+}
+label[for="toggler1"]:hover{
+    transform: scale(1.05);
+	transition: transform 0.1s ease-out;
+	cursor: pointer;
+}
+label[for="toggler2"]:hover{
+    transform: scale(1.05);
+	transition: transform 0.1s ease-out;
+}
+label[for="toggler3"]:hover{
+    transform: scale(1.05);
+	transition: transform 0.1s ease-out;
+}
+label[for="toggler4"]:hover{
+    transform: scale(1.05);
+	transition: transform 0.1s ease-out;
+}
+
+
